@@ -5,7 +5,7 @@ idade = ano_atual - ano
 print('O atleta tem {} anos'.format(idade))
 
 if idade < 9:
-    print('Classificacao: MIRIN')
+    print('Classificacao: MIRIM')
 elif idade > 9 and idade <= 14:
     print('Classificacao: INFANTIL')
 elif idade > 14 and idade <= 19:
