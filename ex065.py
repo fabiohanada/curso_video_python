@@ -13,7 +13,7 @@ while cont != 999:
         menor = n
     if parada == 'n':
         media = soma / cont
-        print('Voce digitou {} e a media foi {}'.format(cont, media))
+        print('Voce digitou {} numeros e a media foi de {:.2f}'.format(cont, media))
         print(maior)
         print(menor)
         break
