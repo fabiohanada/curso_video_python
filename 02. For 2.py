@@ -27,7 +27,7 @@ Entrada
     Salário total no ano: R$ 000.00
     
  """
-# Escreva seu código aqui
+'''# Escreva seu código aqui
 
 #1passo
 salario_mensal = input('Digite o salario: ')
@@ -53,7 +53,27 @@ for mes in range(13):
     print(f'Mes {mes} : R$ {sal_mensal:.2f}')
 
     salario_total = salario_total + sal_mensal
-    sal_mensal = sal_mensal + (sal_mensal * percentual_aumento)
+    sal_mensal = sal_mensal + (sal_mensal * percentual_aumento)'''
+
+salario = float(input('Digite o seu salario: '))
+
+percentual = float(input('Digite o percentual de aumento: '))
+
+percentual = percentual / 100
+
+aumento = 0
+
+salario_total = 0
+
+for mes in range(1, 13):
+    print(f'Mes {mes} : R$ {salario:.2f}')
+
+    aumento = salario * percentual
+    salario += aumento
+
+    salario_total += salario
+
+print(f'Salario Total: {salario_total:.2f}')
 
 
 
